@@ -1,0 +1,1 @@
+"""Weekly status report generator."""

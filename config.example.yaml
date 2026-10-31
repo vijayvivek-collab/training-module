@@ -1,0 +1,29 @@
+jira:
+  base_url: https://your-org.atlassian.net
+  project_keys: [ABC]
+  board_id: 123
+  story_points_field: customfield_10016
+  blocked_labels: [blocked]
+  blocked_statuses: ["Blocked"]
+  velocity_sprints: 3
+  tracked_fix_versions: []
+
+rag:
+  green_min_pct_of_expected: 80
+  red_below_pct_of_expected: 60
+
+report:
+  title: "Weekly Status Report"
+  timezone: "UTC"
+  show_ticket_keys: false
+  show_individuals: false
+
+delivery:
+  mode: draft
+  provider: smtp
+  from: pm@example.com
+  to: [exec-list@example.com]
+  subject: "[Weekly Status] {project} | {sprint} | {rag} | {date}"
+
+llm:
+  enabled: false
